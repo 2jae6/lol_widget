@@ -8,14 +8,19 @@
 import Foundation
 import Moya
 
+/// Riot API 사용을 위한 Service
 final class RiotService {
   static func summonerIDBy(name: String) async -> Result<String, RiotServiceError> {
     let data: Data
     switch await self.requestData(query: .findSummonerByName(name: name)) {
     case .success(let _data):
       data = _data
-    case .failure:
-      return .failure(.requestFailed)
+    case .failure(let err):
+      if case let .statusCode(e) = err, e.statusCode == 404 {
+        return .failure(.userNotFound)
+      } else {
+        return .failure(.requestFailed)
+      }
     }
     
     let summoner: SummonerDTO
@@ -30,10 +35,15 @@ final class RiotService {
   
   static func leagueBy(id: String) async -> Result<[LeagueEntryDTO], RiotServiceError> {
     let data: Data
-    do {
-      data = try await self.requestData(query: .findRankByID(id: id)).get()
-    } catch {
-      return .failure(.requestFailed)
+    switch await self.requestData(query: .findRankByID(id: id)) {
+    case .success(let _data):
+      data = _data
+    case .failure(let err):
+      if case let .statusCode(e) = err, e.statusCode == 404 {
+        return .failure(.userNotFound)
+      } else {
+        return .failure(.requestFailed)
+      }
     }
     
     let league: [LeagueEntryDTO]
@@ -70,4 +80,5 @@ enum RiotServiceError: Error {
   case requestFailed
   case decodingError
   case urlError
+  case userNotFound
 }

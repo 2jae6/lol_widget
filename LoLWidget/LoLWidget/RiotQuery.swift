@@ -8,6 +8,7 @@
 import Foundation
 import Moya
 
+/// `RiotService` 요청을 위한 Request Builder
 enum RiotQuery {
   case findSummonerByName(name: String)
   case findRankByID(id: String)
