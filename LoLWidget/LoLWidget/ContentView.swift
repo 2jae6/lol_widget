@@ -19,3 +19,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+class contentViewModel:ObservableObject{
+    @Published var t = 3
+    
+    
+}
