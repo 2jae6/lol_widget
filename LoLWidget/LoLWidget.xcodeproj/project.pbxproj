@@ -15,6 +15,11 @@
 		48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
 		48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88527A5A4BC009E906E /* Constraints.swift */; };
 		48C8B88A27A5AE72009E906E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 48C8B88927A5AE72009E906E /* Alamofire */; };
+		69DD0FC927A6AABB00CCE764 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EC27A588000069AF55 /* WidgetKit.framework */; };
+		69DD0FCA27A6AABB00CCE764 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EE27A588000069AF55 /* SwiftUI.framework */; };
+		69DD0FCD27A6AABB00CCE764 /* LoLWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */; };
+		69DD0FCF27A6AABC00CCE764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */; };
+		69DD0FD327A6AABC00CCE764 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */; };
 		69E650BF27A587AA0069AF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BE27A587AA0069AF55 /* ContentView.swift */; };
 		69E650C127A587AC0069AF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650C027A587AC0069AF55 /* Assets.xcassets */; };
@@ -22,16 +27,16 @@
 		69E650CE27A587AC0069AF55 /* LoLWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650CD27A587AC0069AF55 /* LoLWidgetTests.swift */; };
 		69E650D827A587AC0069AF55 /* LoLWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650D727A587AC0069AF55 /* LoLWidgetUITests.swift */; };
 		69E650DA27A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650D927A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift */; };
-		69E650ED27A588000069AF55 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EC27A588000069AF55 /* WidgetKit.framework */; };
-		69E650EF27A588000069AF55 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EE27A588000069AF55 /* SwiftUI.framework */; };
-		69E650F227A588000069AF55 /* LoLWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650F127A588000069AF55 /* LoLWidgetExtension.swift */; };
-		69E650F527A588010069AF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650F427A588010069AF55 /* Assets.xcassets */; };
-		69E650F727A588010069AF55 /* LoLWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 69E650F327A588000069AF55 /* LoLWidgetExtension.intentdefinition */; };
-		69E650F827A588010069AF55 /* LoLWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 69E650F327A588000069AF55 /* LoLWidgetExtension.intentdefinition */; };
-		69E650FB27A588010069AF55 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69E650EA27A588000069AF55 /* LoLWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		69DD0FD127A6AABC00CCE764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69E650B127A587AA0069AF55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69DD0FC727A6AABB00CCE764;
+			remoteInfo = LoLWidgetExtensionExtension;
+		};
 		69E650CA27A587AC0069AF55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 69E650B127A587AA0069AF55 /* Project object */;
@@ -46,13 +51,6 @@
 			remoteGlobalIDString = 69E650B827A587AA0069AF55;
 			remoteInfo = LoLWidget;
 		};
-		69E650F927A588010069AF55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69E650B127A587AA0069AF55 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69E650E927A588000069AF55;
-			remoteInfo = LoLWidgetExtensionExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,7 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				69E650FB27A588010069AF55 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */,
+				69DD0FD327A6AABC00CCE764 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +76,10 @@
 		48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEntryDTO.swift; sourceTree = "<group>"; };
 		48C8B88527A5A4BC009E906E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		48C8B88727A5AA52009E906E /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LoLWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetExtension.swift; sourceTree = "<group>"; };
+		69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69DD0FD027A6AABC00CCE764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E650B927A587AA0069AF55 /* LoLWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetApp.swift; sourceTree = "<group>"; };
 		69E650BE27A587AA0069AF55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,16 +90,20 @@
 		69E650D327A587AC0069AF55 /* LoLWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E650D727A587AC0069AF55 /* LoLWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetUITests.swift; sourceTree = "<group>"; };
 		69E650D927A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		69E650EA27A588000069AF55 /* LoLWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LoLWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E650EC27A588000069AF55 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		69E650EE27A588000069AF55 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		69E650F127A588000069AF55 /* LoLWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetExtension.swift; sourceTree = "<group>"; };
-		69E650F327A588000069AF55 /* LoLWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LoLWidgetExtension.intentdefinition; sourceTree = "<group>"; };
-		69E650F427A588010069AF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		69E650F627A588010069AF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		69DD0FC527A6AABB00CCE764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DD0FCA27A6AABB00CCE764 /* SwiftUI.framework in Frameworks */,
+				69DD0FC927A6AABB00CCE764 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69E650B627A587AA0069AF55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,25 +127,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69E650E727A588000069AF55 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E650EF27A588000069AF55 /* SwiftUI.framework in Frameworks */,
-				69E650ED27A588000069AF55 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69DD0FCB27A6AABB00CCE764 /* LoLWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */,
+				69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */,
+				69DD0FD027A6AABC00CCE764 /* Info.plist */,
+			);
+			path = LoLWidgetExtension;
+			sourceTree = "<group>";
+		};
 		69E650B027A587AA0069AF55 = {
 			isa = PBXGroup;
 			children = (
 				69E650BB27A587AA0069AF55 /* LoLWidget */,
 				69E650CC27A587AC0069AF55 /* LoLWidgetTests */,
 				69E650D627A587AC0069AF55 /* LoLWidgetUITests */,
-				69E650F027A588000069AF55 /* LoLWidgetExtension */,
+				69DD0FCB27A6AABB00CCE764 /* LoLWidgetExtension */,
 				69E650EB27A588000069AF55 /* Frameworks */,
 				69E650BA27A587AA0069AF55 /* Products */,
 			);
@@ -151,7 +158,7 @@
 				69E650B927A587AA0069AF55 /* LoLWidget.app */,
 				69E650C927A587AC0069AF55 /* LoLWidgetTests.xctest */,
 				69E650D327A587AC0069AF55 /* LoLWidgetUITests.xctest */,
-				69E650EA27A588000069AF55 /* LoLWidgetExtensionExtension.appex */,
+				69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,20 +216,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		69E650F027A588000069AF55 /* LoLWidgetExtension */ = {
-			isa = PBXGroup;
-			children = (
-				69E650F127A588000069AF55 /* LoLWidgetExtension.swift */,
-				69E650F327A588000069AF55 /* LoLWidgetExtension.intentdefinition */,
-				69E650F427A588010069AF55 /* Assets.xcassets */,
-				69E650F627A588010069AF55 /* Info.plist */,
-			);
-			path = LoLWidgetExtension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		69DD0FC727A6AABB00CCE764 /* LoLWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DD0FD427A6AABC00CCE764 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */;
+			buildPhases = (
+				69DD0FC427A6AABB00CCE764 /* Sources */,
+				69DD0FC527A6AABB00CCE764 /* Frameworks */,
+				69DD0FC627A6AABB00CCE764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLWidgetExtensionExtension;
+			productName = LoLWidgetExtensionExtension;
+			productReference = 69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		69E650B827A587AA0069AF55 /* LoLWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69E650DD27A587AC0069AF55 /* Build configuration list for PBXNativeTarget "LoLWidget" */;
@@ -235,7 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				69E650FA27A588010069AF55 /* PBXTargetDependency */,
+				69DD0FD227A6AABC00CCE764 /* PBXTargetDependency */,
 			);
 			name = LoLWidget;
 			packageProductDependencies = (
@@ -282,23 +295,6 @@
 			productReference = 69E650D327A587AC0069AF55 /* LoLWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		69E650E927A588000069AF55 /* LoLWidgetExtensionExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69E650FC27A588010069AF55 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */;
-			buildPhases = (
-				69E650E627A588000069AF55 /* Sources */,
-				69E650E727A588000069AF55 /* Frameworks */,
-				69E650E827A588000069AF55 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LoLWidgetExtensionExtension;
-			productName = LoLWidgetExtensionExtension;
-			productReference = 69E650EA27A588000069AF55 /* LoLWidgetExtensionExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -309,6 +305,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					69DD0FC727A6AABB00CCE764 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					69E650B827A587AA0069AF55 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -319,9 +318,6 @@
 					69E650D227A587AC0069AF55 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 69E650B827A587AA0069AF55;
-					};
-					69E650E927A588000069AF55 = {
-						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -345,12 +341,20 @@
 				69E650B827A587AA0069AF55 /* LoLWidget */,
 				69E650C827A587AC0069AF55 /* LoLWidgetTests */,
 				69E650D227A587AC0069AF55 /* LoLWidgetUITests */,
-				69E650E927A588000069AF55 /* LoLWidgetExtensionExtension */,
+				69DD0FC727A6AABB00CCE764 /* LoLWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		69DD0FC627A6AABB00CCE764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DD0FCF27A6AABC00CCE764 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69E650B727A587AA0069AF55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,17 +378,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69E650E827A588000069AF55 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E650F527A588010069AF55 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		69DD0FC427A6AABB00CCE764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DD0FCD27A6AABB00CCE764 /* LoLWidgetExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69E650B527A587AA0069AF55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,7 +397,6 @@
 				48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */,
 				48C8B88127A5A00F009E906E /* SummonerDTO.swift in Sources */,
 				48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */,
-				69E650F827A588010069AF55 /* LoLWidgetExtension.intentdefinition in Sources */,
 				69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */,
 				48BB030F27A5BE2E0067EB15 /* RiotQuery.swift in Sources */,
 				48C8B87F27A59BD7009E906E /* RiotService.swift in Sources */,
@@ -418,18 +421,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69E650E627A588000069AF55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E650F727A588010069AF55 /* LoLWidgetExtension.intentdefinition in Sources */,
-				69E650F227A588000069AF55 /* LoLWidgetExtension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		69DD0FD227A6AABC00CCE764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69DD0FC727A6AABB00CCE764 /* LoLWidgetExtensionExtension */;
+			targetProxy = 69DD0FD127A6AABC00CCE764 /* PBXContainerItemProxy */;
+		};
 		69E650CB27A587AC0069AF55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 69E650B827A587AA0069AF55 /* LoLWidget */;
@@ -440,14 +439,63 @@
 			target = 69E650B827A587AA0069AF55 /* LoLWidget */;
 			targetProxy = 69E650D427A587AC0069AF55 /* PBXContainerItemProxy */;
 		};
-		69E650FA27A588010069AF55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69E650E927A588000069AF55 /* LoLWidgetExtensionExtension */;
-			targetProxy = 69E650F927A588010069AF55 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		69DD0FD527A6AABC00CCE764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78X32W2D44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoLWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LoLWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidget.LoLWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69DD0FD627A6AABC00CCE764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78X32W2D44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoLWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LoLWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidget.LoLWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		69E650DB27A587AC0069AF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -704,65 +752,18 @@
 			};
 			name = Release;
 		};
-		69E650FD27A588010069AF55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X32W2D44;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoLWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LoLWidgetExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidget.LoLWidgetExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		69E650FE27A588010069AF55 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X32W2D44;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoLWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LoLWidgetExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidget.LoLWidgetExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		69DD0FD427A6AABC00CCE764 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DD0FD527A6AABC00CCE764 /* Debug */,
+				69DD0FD627A6AABC00CCE764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		69E650B427A587AA0069AF55 /* Build configuration list for PBXProject "LoLWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -795,15 +796,6 @@
 			buildConfigurations = (
 				69E650E427A587AC0069AF55 /* Debug */,
 				69E650E527A587AC0069AF55 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69E650FC27A588010069AF55 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69E650FD27A588010069AF55 /* Debug */,
-				69E650FE27A588010069AF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
