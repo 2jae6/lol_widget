@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48BB030D27A5B0830067EB15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 48BB030C27A5B0830067EB15 /* Moya */; };
+		48BB030F27A5BE2E0067EB15 /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
+		48BB031127A5BFD30067EB15 /* RiotServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */; };
+		48C8B87F27A59BD7009E906E /* RiotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B87E27A59BD7009E906E /* RiotService.swift */; };
+		48C8B88127A5A00F009E906E /* SummonerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88027A5A00F009E906E /* SummonerDTO.swift */; };
+		48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
+		48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88527A5A4BC009E906E /* Constraints.swift */; };
+		48C8B88A27A5AE72009E906E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 48C8B88927A5AE72009E906E /* Alamofire */; };
 		69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */; };
 		69E650BF27A587AA0069AF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BE27A587AA0069AF55 /* ContentView.swift */; };
 		69E650C127A587AC0069AF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650C027A587AC0069AF55 /* Assets.xcassets */; };
@@ -62,6 +70,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4814DB0B27A591EA00A376CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotQuery.swift; sourceTree = "<group>"; };
+		48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotServiceTests.swift; sourceTree = "<group>"; };
+		48C8B87E27A59BD7009E906E /* RiotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotService.swift; sourceTree = "<group>"; };
+		48C8B88027A5A00F009E906E /* SummonerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerDTO.swift; sourceTree = "<group>"; };
+		48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEntryDTO.swift; sourceTree = "<group>"; };
+		48C8B88527A5A4BC009E906E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		48C8B88727A5AA52009E906E /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		69E650B927A587AA0069AF55 /* LoLWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetApp.swift; sourceTree = "<group>"; };
 		69E650BE27A587AA0069AF55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BB030D27A5B0830067EB15 /* Moya in Frameworks */,
+				48C8B88A27A5AE72009E906E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +159,15 @@
 		69E650BB27A587AA0069AF55 /* LoLWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4814DB0B27A591EA00A376CA /* Info.plist */,
+				48C8B88727A5AA52009E906E /* Shared.xcconfig */,
 				69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */,
 				69E650BE27A587AA0069AF55 /* ContentView.swift */,
+				48C8B87E27A59BD7009E906E /* RiotService.swift */,
+				48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */,
+				48C8B88027A5A00F009E906E /* SummonerDTO.swift */,
+				48C8B88527A5A4BC009E906E /* Constraints.swift */,
+				48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */,
 				69E650C027A587AC0069AF55 /* Assets.xcassets */,
 				69E650C227A587AC0069AF55 /* Preview Content */,
 			);
@@ -161,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				69E650CD27A587AC0069AF55 /* LoLWidgetTests.swift */,
+				48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */,
 			);
 			path = LoLWidgetTests;
 			sourceTree = "<group>";
@@ -212,6 +238,10 @@
 				69E650FA27A588010069AF55 /* PBXTargetDependency */,
 			);
 			name = LoLWidget;
+			packageProductDependencies = (
+				48C8B88927A5AE72009E906E /* Alamofire */,
+				48BB030C27A5B0830067EB15 /* Moya */,
+			);
 			productName = LoLWidget;
 			productReference = 69E650B927A587AA0069AF55 /* LoLWidget.app */;
 			productType = "com.apple.product-type.application";
@@ -304,6 +334,10 @@
 				Base,
 			);
 			mainGroup = 69E650B027A587AA0069AF55;
+			packageReferences = (
+				48C8B88827A5AE72009E906E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				48BB030B27A5B0830067EB15 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 69E650BA27A587AA0069AF55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,8 +390,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E650BF27A587AA0069AF55 /* ContentView.swift in Sources */,
+				48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */,
+				48C8B88127A5A00F009E906E /* SummonerDTO.swift in Sources */,
+				48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */,
 				69E650F827A588010069AF55 /* LoLWidgetExtension.intentdefinition in Sources */,
 				69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */,
+				48BB030F27A5BE2E0067EB15 /* RiotQuery.swift in Sources */,
+				48C8B87F27A59BD7009E906E /* RiotService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E650CE27A587AC0069AF55 /* LoLWidgetTests.swift in Sources */,
+				48BB031127A5BFD30067EB15 /* RiotServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +566,7 @@
 		};
 		69E650DE27A587AC0069AF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -533,9 +574,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoLWidget/Preview Content\"";
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoLWidget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -556,6 +598,7 @@
 		};
 		69E650DF27A587AC0069AF55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -563,9 +606,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoLWidget/Preview Content\"";
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoLWidget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -591,7 +635,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
@@ -611,7 +655,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
@@ -630,7 +674,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidgetUITests;
@@ -648,7 +692,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidgetUITests;
@@ -662,12 +706,13 @@
 		};
 		69E650FD27A588010069AF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoLWidgetExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LoLWidgetExtension;
@@ -689,12 +734,13 @@
 		};
 		69E650FE27A588010069AF55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				DEVELOPMENT_TEAM = 78X32W2D44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoLWidgetExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LoLWidgetExtension;
@@ -763,6 +809,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48BB030B27A5B0830067EB15 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		48C8B88827A5AE72009E906E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48BB030C27A5B0830067EB15 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48BB030B27A5B0830067EB15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		48C8B88927A5AE72009E906E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48C8B88827A5AE72009E906E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69E650B127A587AA0069AF55 /* Project object */;
 }
