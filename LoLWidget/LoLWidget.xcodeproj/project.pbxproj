@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4875CCF627A871130034FF3C /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
+		4875CCF727A871130034FF3C /* RiotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B87E27A59BD7009E906E /* RiotService.swift */; };
+		4875CCF827A871130034FF3C /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
+		4875CCF927A871130034FF3C /* SummonerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88027A5A00F009E906E /* SummonerDTO.swift */; };
+		4875CCFB27A872580034FF3C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4875CCFA27A872580034FF3C /* Alamofire */; };
+		4875CCFD27A8725A0034FF3C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4875CCFC27A8725A0034FF3C /* Moya */; };
+		4875CCFE27A872940034FF3C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88527A5A4BC009E906E /* Constraints.swift */; };
+		4875CD0027A873BE0034FF3C /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875CCFF27A873BE0034FF3C /* Shared.xcassets */; };
+		4875CD0127A873BE0034FF3C /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875CCFF27A873BE0034FF3C /* Shared.xcassets */; };
 		48BB030D27A5B0830067EB15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 48BB030C27A5B0830067EB15 /* Moya */; };
 		48BB030F27A5BE2E0067EB15 /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
 		48BB031127A5BFD30067EB15 /* RiotServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */; };
@@ -69,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		4814DB0B27A591EA00A376CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4875CCFF27A873BE0034FF3C /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
 		48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotQuery.swift; sourceTree = "<group>"; };
 		48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotServiceTests.swift; sourceTree = "<group>"; };
 		48C8B87E27A59BD7009E906E /* RiotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotService.swift; sourceTree = "<group>"; };
@@ -99,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4875CCFB27A872580034FF3C /* Alamofire in Frameworks */,
 				69DD0FCA27A6AABB00CCE764 /* SwiftUI.framework in Frameworks */,
+				4875CCFD27A8725A0034FF3C /* Moya in Frameworks */,
 				69DD0FC927A6AABB00CCE764 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +142,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4875CCED27A870B70034FF3C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				48C8B88527A5A4BC009E906E /* Constraints.swift */,
+				4875CCFF27A873BE0034FF3C /* Shared.xcassets */,
+				4875CCEE27A870C50034FF3C /* Domain */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4875CCEE27A870C50034FF3C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				48C8B87E27A59BD7009E906E /* RiotService.swift */,
+				48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */,
+				4875CCEF27A870D60034FF3C /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4875CCEF27A870D60034FF3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48C8B88027A5A00F009E906E /* SummonerDTO.swift */,
+				48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		69DD0FCB27A6AABB00CCE764 /* LoLWidgetExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +184,7 @@
 		69E650B027A587AA0069AF55 = {
 			isa = PBXGroup;
 			children = (
+				4875CCED27A870B70034FF3C /* Shared */,
 				69E650BB27A587AA0069AF55 /* LoLWidget */,
 				69E650CC27A587AC0069AF55 /* LoLWidgetTests */,
 				69E650D627A587AC0069AF55 /* LoLWidgetUITests */,
@@ -170,11 +212,6 @@
 				48C8B88727A5AA52009E906E /* Shared.xcconfig */,
 				69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */,
 				69E650BE27A587AA0069AF55 /* ContentView.swift */,
-				48C8B87E27A59BD7009E906E /* RiotService.swift */,
-				48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */,
-				48C8B88027A5A00F009E906E /* SummonerDTO.swift */,
-				48C8B88527A5A4BC009E906E /* Constraints.swift */,
-				48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */,
 				69E650C027A587AC0069AF55 /* Assets.xcassets */,
 				69E650C227A587AC0069AF55 /* Preview Content */,
 			);
@@ -232,6 +269,10 @@
 			dependencies = (
 			);
 			name = LoLWidgetExtensionExtension;
+			packageProductDependencies = (
+				4875CCFA27A872580034FF3C /* Alamofire */,
+				4875CCFC27A8725A0034FF3C /* Moya */,
+			);
 			productName = LoLWidgetExtensionExtension;
 			productReference = 69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -351,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4875CD0127A873BE0034FF3C /* Shared.xcassets in Resources */,
 				69DD0FCF27A6AABC00CCE764 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +403,7 @@
 			files = (
 				69E650C427A587AC0069AF55 /* Preview Assets.xcassets in Resources */,
 				69E650C127A587AC0069AF55 /* Assets.xcassets in Resources */,
+				4875CD0027A873BE0034FF3C /* Shared.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4875CCF627A871130034FF3C /* LeagueEntryDTO.swift in Sources */,
+				4875CCF927A871130034FF3C /* SummonerDTO.swift in Sources */,
 				69DD0FCD27A6AABB00CCE764 /* LoLWidgetExtension.swift in Sources */,
+				4875CCF827A871130034FF3C /* RiotQuery.swift in Sources */,
+				4875CCFE27A872940034FF3C /* Constraints.swift in Sources */,
+				4875CCF727A871130034FF3C /* RiotService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +870,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4875CCFA27A872580034FF3C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48C8B88827A5AE72009E906E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4875CCFC27A8725A0034FF3C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48BB030B27A5B0830067EB15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
 		48BB030C27A5B0830067EB15 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 48BB030B27A5B0830067EB15 /* XCRemoteSwiftPackageReference "Moya" */;

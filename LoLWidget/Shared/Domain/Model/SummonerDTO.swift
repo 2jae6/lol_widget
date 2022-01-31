@@ -5,15 +5,13 @@
 //  Created by JK on 2022/01/30.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import Moya
-
-// MARK: - SummonerDTO
 
 /**
  소환사에 관한 정보
- 
+
  - `id` : 소환사 고유 Id (encrypted)
  - `accountID` : 계정 id (encrypted)
  - `name` : 소환사 이름
