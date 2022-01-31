@@ -1,0 +1,29 @@
+# Current version of SwiftFormat used at Airbnb: 0.48.4
+
+# options
+--self remove # redundantSelf
+--importgrouping testable-bottom # sortedImports
+--commas always # trailingCommas
+--trimwhitespace always # trailingSpace
+--indent 4 #indent
+--ifdef no-indent #indent
+--wraparguments before-first # wrapArguments
+--wrapparameters before-first # wrapArguments
+--wrapcollections before-first # wrapArguments
+--wrapconditions before-first # wrapArguments
+--wrapreturntype if-multiline #wrapArguments
+# --closingparen same-line # wrapArguments
+--funcattributes prev-line # wrapAttributes
+--typeattributes prev-line # wrapAttributes
+--structthreshold 20 # organizeDeclarations
+--enumthreshold 20 # organizeDeclarations
+--organizetypes class,struct,enum,extension # organizeDeclarations
+--markcategories false
+--extensionacl on-declarations # extensionAccessControl
+--patternlet inline # hoistPatternLet
+--swiftversion 5.5
+--exclude Pods, iOSCodegenTemplate, frameworks, GraphQL
+--marktypes never
+
+# rules
+--rules anyObjectProtocol,redundantParens,redundantReturn,redundantSelf,sortedImports,strongifiedSelf,trailingCommas,trailingSpace,wrapArguments,wrapMultilineStatementBraces,indent,wrapAttributes,organizeDeclarations,extensionAccessControl,duplicateImports,redundantType,hoistPatternLet,consecutiveSpaces,typeSugar
