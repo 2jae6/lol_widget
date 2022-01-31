@@ -43,19 +43,22 @@ struct LoLWidgetExtensionEntryView : View {
 // 뷰 생성
     
     var body: some View {
-        HStack{
-            Image("이미지 넣기")
+        HStack(alignment: .center, spacing: 50){
+            Image("silver")
                 .resizable()
                 .foregroundColor(.red)
                 .frame(width: 100, height: 100)
-                .padding()
-            
+                
+           
             VStack{
-                Text(entry.date, style: .time)
-                    .font(.largeTitle)
-                    .foregroundColor(.orange)
-                let test = "gdgd"
-                Text(test)
+                Text("닉네임").foregroundColor(.orange)
+                
+                Text("티어 및 점수").foregroundColor(.orange)
+                
+                Text("총전적/승/패/승률").foregroundColor(.orange)
+                
+                Text("최근 업데이트 시간").foregroundColor(.orange)
+                
             }
         }
         
