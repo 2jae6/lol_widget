@@ -7,11 +7,9 @@
 
 import Foundation
 
-// MARK: - LeagueEntryDTO
-
 /**
  사용자의 랭크(리그) 게임 등급에 관한 정보
- 
+
  - `leagueID` : 경기 id
  - `queueType` : 큐 타입 ( 랭크, TFT )
  - `tier` : 티어 (숫자)

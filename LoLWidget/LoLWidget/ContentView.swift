@@ -20,8 +20,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-class contentViewModel:ObservableObject{
+class contentViewModel: ObservableObject{
     @Published var t = 3
-    
-    
+
 }

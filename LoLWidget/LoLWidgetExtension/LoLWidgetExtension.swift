@@ -5,20 +5,20 @@
 //  Created by Jay on 2022/01/30.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date())
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
         let entry = SimpleEntry(date: Date())
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
@@ -38,30 +38,30 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct LoLWidgetExtensionEntryView : View {
+struct LoLWidgetExtensionEntryView: View {
     var entry: Provider.Entry
-// 뷰 생성
-    
+
+    // 뷰 생성
+
     var body: some View {
         HStack(alignment: .center, spacing: 50){
             Image("silver")
                 .resizable()
                 .foregroundColor(.red)
                 .frame(width: 100, height: 100)
-                
-           
+
             VStack{
                 Text("닉네임").foregroundColor(.orange)
-                
+
                 Text("티어 및 점수").foregroundColor(.orange)
-                
+
                 Text("총전적/승/패/승률").foregroundColor(.orange)
-                
+
                 Text("최근 업데이트 시간").foregroundColor(.orange)
-                
+
             }
         }
-        
+
     }
 }
 
