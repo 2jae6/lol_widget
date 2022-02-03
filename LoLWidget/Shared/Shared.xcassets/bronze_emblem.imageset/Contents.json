@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "bronze_emblem.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
