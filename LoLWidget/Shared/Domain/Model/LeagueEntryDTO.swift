@@ -11,7 +11,7 @@ import Foundation
  사용자의 랭크(리그) 게임 등급에 관한 정보
 
  - `leagueID` : 경기 id
- - `queueType` : 큐 타입 ( 랭크, TFT )
+ - `queueType` : 큐 타입 ( 랭크, TFT ), `RANKED_SOLO_5x5`
  - `tier` : 티어 (숫자)
  - `rank` :  티어 (등급) ex. 아이언, 브론즈, 실버, ...
  - `summonerID` :  소환사 ID

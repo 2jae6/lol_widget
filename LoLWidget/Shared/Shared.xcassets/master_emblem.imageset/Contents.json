@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "master_emblem.png",
       "idiom" : "universal"
     }
   ],

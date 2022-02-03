@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "challenger_emblem.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

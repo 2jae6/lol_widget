@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4861852527ABF6BF006CAFB6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852427ABF6BF006CAFB6 /* SearchBar.swift */; };
+		4861852727ABF6C9006CAFB6 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852627ABF6C9006CAFB6 /* League.swift */; };
+		4861852C27ABFCEA006CAFB6 /* LabelAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852B27ABFCEA006CAFB6 /* LabelAndText.swift */; };
+		4861852E27AC00E0006CAFB6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852D27AC00E0006CAFB6 /* MainViewModel.swift */; };
 		4875CCF627A871130034FF3C /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
 		4875CCF727A871130034FF3C /* RiotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B87E27A59BD7009E906E /* RiotService.swift */; };
 		4875CCF827A871130034FF3C /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
@@ -30,7 +34,7 @@
 		69DD0FCF27A6AABC00CCE764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */; };
 		69DD0FD327A6AABC00CCE764 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */; };
-		69E650BF27A587AA0069AF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BE27A587AA0069AF55 /* ContentView.swift */; };
+		69E650BF27A587AA0069AF55 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BE27A587AA0069AF55 /* MainView.swift */; };
 		69E650C127A587AC0069AF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650C027A587AC0069AF55 /* Assets.xcassets */; };
 		69E650C427A587AC0069AF55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650C327A587AC0069AF55 /* Preview Assets.xcassets */; };
 		69E650CE27A587AC0069AF55 /* LoLWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650CD27A587AC0069AF55 /* LoLWidgetTests.swift */; };
@@ -78,6 +82,11 @@
 
 /* Begin PBXFileReference section */
 		4814DB0B27A591EA00A376CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4861852427ABF6BF006CAFB6 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4861852627ABF6C9006CAFB6 /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		4861852A27ABF756006CAFB6 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		4861852B27ABFCEA006CAFB6 /* LabelAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndText.swift; sourceTree = "<group>"; };
+		4861852D27AC00E0006CAFB6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4875CCFF27A873BE0034FF3C /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
 		48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotQuery.swift; sourceTree = "<group>"; };
 		48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotServiceTests.swift; sourceTree = "<group>"; };
@@ -85,14 +94,13 @@
 		48C8B88027A5A00F009E906E /* SummonerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerDTO.swift; sourceTree = "<group>"; };
 		48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEntryDTO.swift; sourceTree = "<group>"; };
 		48C8B88527A5A4BC009E906E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
-		48C8B88727A5AA52009E906E /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LoLWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetExtension.swift; sourceTree = "<group>"; };
 		69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69DD0FD027A6AABC00CCE764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E650B927A587AA0069AF55 /* LoLWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetApp.swift; sourceTree = "<group>"; };
-		69E650BE27A587AA0069AF55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69E650BE27A587AA0069AF55 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		69E650C027A587AC0069AF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69E650C327A587AC0069AF55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69E650C927A587AC0069AF55 /* LoLWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,12 +150,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4861852F27AC00EB006CAFB6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4861852427ABF6BF006CAFB6 /* SearchBar.swift */,
+				4861852B27ABFCEA006CAFB6 /* LabelAndText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		4875CCED27A870B70034FF3C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				48C8B88527A5A4BC009E906E /* Constraints.swift */,
 				4875CCFF27A873BE0034FF3C /* Shared.xcassets */,
 				4875CCEE27A870C50034FF3C /* Domain */,
+				4861852A27ABF756006CAFB6 /* Shared.xcconfig */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -166,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				48C8B88027A5A00F009E906E /* SummonerDTO.swift */,
+				4861852627ABF6C9006CAFB6 /* League.swift */,
 				48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */,
 			);
 			path = Model;
@@ -209,9 +228,10 @@
 			isa = PBXGroup;
 			children = (
 				4814DB0B27A591EA00A376CA /* Info.plist */,
-				48C8B88727A5AA52009E906E /* Shared.xcconfig */,
 				69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */,
-				69E650BE27A587AA0069AF55 /* ContentView.swift */,
+				69E650BE27A587AA0069AF55 /* MainView.swift */,
+				4861852D27AC00E0006CAFB6 /* MainViewModel.swift */,
+				4861852F27AC00EB006CAFB6 /* Components */,
 				69E650C027A587AC0069AF55 /* Assets.xcassets */,
 				69E650C227A587AC0069AF55 /* Preview Content */,
 			);
@@ -482,11 +502,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E650BF27A587AA0069AF55 /* ContentView.swift in Sources */,
+				69E650BF27A587AA0069AF55 /* MainView.swift in Sources */,
+				4861852727ABF6C9006CAFB6 /* League.swift in Sources */,
 				48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */,
+				4861852E27AC00E0006CAFB6 /* MainViewModel.swift in Sources */,
+				4861852C27ABFCEA006CAFB6 /* LabelAndText.swift in Sources */,
 				48C8B88127A5A00F009E906E /* SummonerDTO.swift in Sources */,
 				48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */,
 				69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */,
+				4861852527ABF6BF006CAFB6 /* SearchBar.swift in Sources */,
 				48BB030F27A5BE2E0067EB15 /* RiotQuery.swift in Sources */,
 				48C8B87F27A59BD7009E906E /* RiotService.swift in Sources */,
 			);
@@ -587,6 +611,7 @@
 		};
 		69E650DB27A587AC0069AF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4861852A27ABF756006CAFB6 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -648,6 +673,7 @@
 		};
 		69E650DC27A587AC0069AF55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4861852A27ABF756006CAFB6 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -703,7 +729,6 @@
 		};
 		69E650DE27A587AC0069AF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -735,7 +760,6 @@
 		};
 		69E650DF27A587AC0069AF55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C8B88727A5AA52009E906E /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
