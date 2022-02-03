@@ -21,7 +21,10 @@ struct MainView: View {
                     viewModel.searchSummoner()
                 }
             Spacer()
-            if let league = viewModel.league {
+
+            if viewModel.isLoading {
+                ProgressView()
+            } else if let league = viewModel.league {
                 VStack {
                     Text(league.summonerName)
                         .font(.title)
