@@ -27,10 +27,10 @@ struct Provider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<WidgetEntry>) -> Void) {
 
         @Sendable
-      func emptyTimeline() {
-        let timeline = Timeline(entries: [WidgetEntry(configuration: configuration)], policy: .never)
-        completion(timeline)
-      }
+        func emptyTimeline() {
+            let timeline = Timeline(entries: [WidgetEntry(configuration: configuration)], policy: .never)
+            completion(timeline)
+        }
 
         guard let username = configuration.username?.trimmingCharacters(in: .whitespacesAndNewlines) else {
             emptyTimeline()
@@ -49,10 +49,10 @@ struct Provider: IntentTimelineProvider {
             }
 
             let refreshDate = Calendar.current.date(byAdding: .hour, value: 1, to: Date())!
-
             let timeline = Timeline(entries: [WidgetEntry(configuration: configuration, league: league)], policy: .after(refreshDate))
-            completion(timeline)
-
+            DispatchQueue.main.async {
+                completion(timeline)
+            }
         }
     }
 }

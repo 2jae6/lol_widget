@@ -31,7 +31,6 @@
 		4882BA7327BC51E300BD626E /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875CCFF27A873BE0034FF3C /* Shared.xcassets */; };
 		4882BA7527BC57B000BD626E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4882BA7427BC57B000BD626E /* Alamofire */; };
 		4882BA7727BC57B000BD626E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4882BA7627BC57B000BD626E /* Moya */; };
-		4882BA7827BC595600BD626E /* LabelAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852B27ABFCEA006CAFB6 /* LabelAndText.swift */; };
 		4894751227BC64090034C426 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4894751127BC64090034C426 /* Shared.xcconfig */; };
 		4894751327BC64090034C426 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4894751127BC64090034C426 /* Shared.xcconfig */; };
 		48BB030D27A5B0830067EB15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 48BB030C27A5B0830067EB15 /* Moya */; };
@@ -372,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				483F10C327BC4F0D00AF4734 /* Provider.swift in Sources */,
-				4882BA7827BC595600BD626E /* LabelAndText.swift in Sources */,
 				4882BA6D27BC51E300BD626E /* Constraints.swift in Sources */,
 				483F10B827BC4E6E00AF4734 /* LoLWidgetExtension.intentdefinition in Sources */,
 				4882BA6E27BC51E300BD626E /* RiotService.swift in Sources */,

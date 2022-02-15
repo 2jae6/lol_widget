@@ -14,7 +14,9 @@ final class MainViewModel: ObservableObject {
 
     func searchSummoner() {
         Task(priority: .utility, operation: {
-            isLoading = true
+            DispatchQueue.main.async {
+                self.isLoading = true
+            }
             guard
                 let _id = try? await RiotService.summonerIDBy(name: self.text).get(),
                 let _rank = try? await RiotService.leagueBy(id: _id).get() else
@@ -26,7 +28,9 @@ final class MainViewModel: ObservableObject {
             let leagues = _rank.map({ League.from(dto: $0) })
             let league = leagues.first(where: { $0?.queue == .rankSolo }) as? League
             setLeague(league)
-            isLoading = false
+            DispatchQueue.main.async {
+                self.isLoading = false
+            }
         })
     }
 

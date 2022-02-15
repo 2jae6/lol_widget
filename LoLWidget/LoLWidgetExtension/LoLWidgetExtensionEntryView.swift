@@ -31,10 +31,10 @@ struct LoLWidgetExtensionEntryView: View {
                             Text("랭크")
                                 .fontWeight(.medium)
                             if let num = tier.rank {
-                                Text("\(tier.tier.rawValue) \(num)")
+                                Text("\(tier.tier.rawValue) \(num) \(league.points)점")
                                     .font(.subheadline)
                             } else {
-                                Text(tier.tier.rawValue)
+                                Text("\(tier.tier.rawValue) \(league.points)점")
                                     .font(.subheadline)
                             }
                         }
