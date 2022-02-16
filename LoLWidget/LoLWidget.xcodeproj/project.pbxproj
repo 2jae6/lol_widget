@@ -7,62 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		483F10AF27BC4E6C00AF4734 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EC27A588000069AF55 /* WidgetKit.framework */; };
+		483F10B027BC4E6C00AF4734 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EE27A588000069AF55 /* SwiftUI.framework */; };
+		483F10B327BC4E6C00AF4734 /* LoLWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F10B227BC4E6C00AF4734 /* LoLWidgetExtension.swift */; };
+		483F10B627BC4E6E00AF4734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483F10B527BC4E6E00AF4734 /* Assets.xcassets */; };
+		483F10B827BC4E6E00AF4734 /* LoLWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 483F10B427BC4E6C00AF4734 /* LoLWidgetExtension.intentdefinition */; };
+		483F10B927BC4E6E00AF4734 /* LoLWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 483F10B427BC4E6C00AF4734 /* LoLWidgetExtension.intentdefinition */; };
+		483F10BC27BC4E6E00AF4734 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 483F10AE27BC4E6C00AF4734 /* LoLWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		483F10C327BC4F0D00AF4734 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F10C227BC4F0D00AF4734 /* Provider.swift */; };
 		4861852527ABF6BF006CAFB6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852427ABF6BF006CAFB6 /* SearchBar.swift */; };
 		4861852727ABF6C9006CAFB6 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852627ABF6C9006CAFB6 /* League.swift */; };
 		4861852C27ABFCEA006CAFB6 /* LabelAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852B27ABFCEA006CAFB6 /* LabelAndText.swift */; };
 		4861852E27AC00E0006CAFB6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852D27AC00E0006CAFB6 /* MainViewModel.swift */; };
-		4875CCF627A871130034FF3C /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
-		4875CCF727A871130034FF3C /* RiotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B87E27A59BD7009E906E /* RiotService.swift */; };
-		4875CCF827A871130034FF3C /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
-		4875CCF927A871130034FF3C /* SummonerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88027A5A00F009E906E /* SummonerDTO.swift */; };
-		4875CCFB27A872580034FF3C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4875CCFA27A872580034FF3C /* Alamofire */; };
-		4875CCFD27A8725A0034FF3C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4875CCFC27A8725A0034FF3C /* Moya */; };
-		4875CCFE27A872940034FF3C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88527A5A4BC009E906E /* Constraints.swift */; };
 		4875CD0027A873BE0034FF3C /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875CCFF27A873BE0034FF3C /* Shared.xcassets */; };
-		4875CD0127A873BE0034FF3C /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875CCFF27A873BE0034FF3C /* Shared.xcassets */; };
+		4882BA6227BC4FA900BD626E /* LoLWidgetExtensionEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882BA6027BC4F9200BD626E /* LoLWidgetExtensionEntryView.swift */; };
+		4882BA6527BC4FDE00BD626E /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4882BA6327BC4FC300BD626E /* WidgetEntry.swift */; };
+		4882BA6D27BC51E300BD626E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88527A5A4BC009E906E /* Constraints.swift */; };
+		4882BA6E27BC51E300BD626E /* RiotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B87E27A59BD7009E906E /* RiotService.swift */; };
+		4882BA6F27BC51E300BD626E /* SummonerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88027A5A00F009E906E /* SummonerDTO.swift */; };
+		4882BA7027BC51E300BD626E /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
+		4882BA7127BC51E300BD626E /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
+		4882BA7227BC51E300BD626E /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861852627ABF6C9006CAFB6 /* League.swift */; };
+		4882BA7327BC51E300BD626E /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4875CCFF27A873BE0034FF3C /* Shared.xcassets */; };
+		4882BA7527BC57B000BD626E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4882BA7427BC57B000BD626E /* Alamofire */; };
+		4882BA7727BC57B000BD626E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4882BA7627BC57B000BD626E /* Moya */; };
+		4894751227BC64090034C426 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4894751127BC64090034C426 /* Shared.xcconfig */; };
+		4894751327BC64090034C426 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4894751127BC64090034C426 /* Shared.xcconfig */; };
 		48BB030D27A5B0830067EB15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 48BB030C27A5B0830067EB15 /* Moya */; };
 		48BB030F27A5BE2E0067EB15 /* RiotQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */; };
-		48BB031127A5BFD30067EB15 /* RiotServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */; };
 		48C8B87F27A59BD7009E906E /* RiotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B87E27A59BD7009E906E /* RiotService.swift */; };
 		48C8B88127A5A00F009E906E /* SummonerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88027A5A00F009E906E /* SummonerDTO.swift */; };
 		48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */; };
 		48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8B88527A5A4BC009E906E /* Constraints.swift */; };
 		48C8B88A27A5AE72009E906E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 48C8B88927A5AE72009E906E /* Alamofire */; };
-		69DD0FC927A6AABB00CCE764 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EC27A588000069AF55 /* WidgetKit.framework */; };
-		69DD0FCA27A6AABB00CCE764 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E650EE27A588000069AF55 /* SwiftUI.framework */; };
-		69DD0FCD27A6AABB00CCE764 /* LoLWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */; };
-		69DD0FCF27A6AABC00CCE764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */; };
-		69DD0FD327A6AABC00CCE764 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		69E650BD27A587AA0069AF55 /* LoLWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */; };
 		69E650BF27A587AA0069AF55 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650BE27A587AA0069AF55 /* MainView.swift */; };
 		69E650C127A587AC0069AF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650C027A587AC0069AF55 /* Assets.xcassets */; };
 		69E650C427A587AC0069AF55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E650C327A587AC0069AF55 /* Preview Assets.xcassets */; };
-		69E650CE27A587AC0069AF55 /* LoLWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650CD27A587AC0069AF55 /* LoLWidgetTests.swift */; };
-		69E650D827A587AC0069AF55 /* LoLWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650D727A587AC0069AF55 /* LoLWidgetUITests.swift */; };
-		69E650DA27A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E650D927A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		69DD0FD127A6AABC00CCE764 /* PBXContainerItemProxy */ = {
+		483F10BA27BC4E6E00AF4734 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 69E650B127A587AA0069AF55 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 69DD0FC727A6AABB00CCE764;
+			remoteGlobalIDString = 483F10AD27BC4E6C00AF4734;
 			remoteInfo = LoLWidgetExtensionExtension;
-		};
-		69E650CA27A587AC0069AF55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69E650B127A587AA0069AF55 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69E650B827A587AA0069AF55;
-			remoteInfo = LoLWidget;
-		};
-		69E650D427A587AC0069AF55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69E650B127A587AA0069AF55 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69E650B827A587AA0069AF55;
-			remoteInfo = LoLWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,7 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				69DD0FD327A6AABC00CCE764 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */,
+				483F10BC27BC4E6E00AF4734 /* LoLWidgetExtensionExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,45 +72,44 @@
 
 /* Begin PBXFileReference section */
 		4814DB0B27A591EA00A376CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		483F10AE27BC4E6C00AF4734 /* LoLWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LoLWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		483F10B227BC4E6C00AF4734 /* LoLWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetExtension.swift; sourceTree = "<group>"; };
+		483F10B427BC4E6C00AF4734 /* LoLWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LoLWidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		483F10B527BC4E6E00AF4734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		483F10B727BC4E6E00AF4734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		483F10C227BC4F0D00AF4734 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		4861852427ABF6BF006CAFB6 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4861852627ABF6C9006CAFB6 /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		4861852A27ABF756006CAFB6 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		4861852B27ABFCEA006CAFB6 /* LabelAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndText.swift; sourceTree = "<group>"; };
 		4861852D27AC00E0006CAFB6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4875CCFF27A873BE0034FF3C /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
+		4882BA6027BC4F9200BD626E /* LoLWidgetExtensionEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetExtensionEntryView.swift; sourceTree = "<group>"; };
+		4882BA6327BC4FC300BD626E /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
+		4894751127BC64090034C426 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		48BB030E27A5BE2E0067EB15 /* RiotQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotQuery.swift; sourceTree = "<group>"; };
-		48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotServiceTests.swift; sourceTree = "<group>"; };
 		48C8B87E27A59BD7009E906E /* RiotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiotService.swift; sourceTree = "<group>"; };
 		48C8B88027A5A00F009E906E /* SummonerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerDTO.swift; sourceTree = "<group>"; };
 		48C8B88227A5A076009E906E /* LeagueEntryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEntryDTO.swift; sourceTree = "<group>"; };
 		48C8B88527A5A4BC009E906E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
-		69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LoLWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetExtension.swift; sourceTree = "<group>"; };
-		69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		69DD0FD027A6AABC00CCE764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E650B927A587AA0069AF55 /* LoLWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E650BC27A587AA0069AF55 /* LoLWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetApp.swift; sourceTree = "<group>"; };
 		69E650BE27A587AA0069AF55 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		69E650C027A587AC0069AF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69E650C327A587AC0069AF55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		69E650C927A587AC0069AF55 /* LoLWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69E650CD27A587AC0069AF55 /* LoLWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetTests.swift; sourceTree = "<group>"; };
-		69E650D327A587AC0069AF55 /* LoLWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69E650D727A587AC0069AF55 /* LoLWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetUITests.swift; sourceTree = "<group>"; };
-		69E650D927A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		69E650EC27A588000069AF55 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		69E650EE27A588000069AF55 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		69DD0FC527A6AABB00CCE764 /* Frameworks */ = {
+		483F10AB27BC4E6C00AF4734 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4875CCFB27A872580034FF3C /* Alamofire in Frameworks */,
-				69DD0FCA27A6AABB00CCE764 /* SwiftUI.framework in Frameworks */,
-				4875CCFD27A8725A0034FF3C /* Moya in Frameworks */,
-				69DD0FC927A6AABB00CCE764 /* WidgetKit.framework in Frameworks */,
+				4882BA7527BC57B000BD626E /* Alamofire in Frameworks */,
+				483F10B027BC4E6C00AF4734 /* SwiftUI.framework in Frameworks */,
+				4882BA7727BC57B000BD626E /* Moya in Frameworks */,
+				483F10AF27BC4E6C00AF4734 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,23 +122,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69E650C627A587AC0069AF55 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69E650D027A587AC0069AF55 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		483F10B127BC4E6C00AF4734 /* LoLWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				483F10B227BC4E6C00AF4734 /* LoLWidgetExtension.swift */,
+				483F10C227BC4F0D00AF4734 /* Provider.swift */,
+				4882BA6027BC4F9200BD626E /* LoLWidgetExtensionEntryView.swift */,
+				4882BA6327BC4FC300BD626E /* WidgetEntry.swift */,
+				483F10B427BC4E6C00AF4734 /* LoLWidgetExtension.intentdefinition */,
+				483F10B527BC4E6E00AF4734 /* Assets.xcassets */,
+				483F10B727BC4E6E00AF4734 /* Info.plist */,
+			);
+			path = LoLWidgetExtension;
+			sourceTree = "<group>";
+		};
 		4861852F27AC00EB006CAFB6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				48C8B88527A5A4BC009E906E /* Constraints.swift */,
+				4894751127BC64090034C426 /* Shared.xcconfig */,
 				4875CCFF27A873BE0034FF3C /* Shared.xcassets */,
 				4875CCEE27A870C50034FF3C /* Domain */,
 				4861852A27ABF756006CAFB6 /* Shared.xcconfig */,
@@ -190,24 +180,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		69DD0FCB27A6AABB00CCE764 /* LoLWidgetExtension */ = {
-			isa = PBXGroup;
-			children = (
-				69DD0FCC27A6AABB00CCE764 /* LoLWidgetExtension.swift */,
-				69DD0FCE27A6AABC00CCE764 /* Assets.xcassets */,
-				69DD0FD027A6AABC00CCE764 /* Info.plist */,
-			);
-			path = LoLWidgetExtension;
-			sourceTree = "<group>";
-		};
 		69E650B027A587AA0069AF55 = {
 			isa = PBXGroup;
 			children = (
 				4875CCED27A870B70034FF3C /* Shared */,
 				69E650BB27A587AA0069AF55 /* LoLWidget */,
-				69E650CC27A587AC0069AF55 /* LoLWidgetTests */,
-				69E650D627A587AC0069AF55 /* LoLWidgetUITests */,
-				69DD0FCB27A6AABB00CCE764 /* LoLWidgetExtension */,
+				483F10B127BC4E6C00AF4734 /* LoLWidgetExtension */,
 				69E650EB27A588000069AF55 /* Frameworks */,
 				69E650BA27A587AA0069AF55 /* Products */,
 			);
@@ -217,9 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				69E650B927A587AA0069AF55 /* LoLWidget.app */,
-				69E650C927A587AC0069AF55 /* LoLWidgetTests.xctest */,
-				69E650D327A587AC0069AF55 /* LoLWidgetUITests.xctest */,
-				69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */,
+				483F10AE27BC4E6C00AF4734 /* LoLWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,24 +222,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		69E650CC27A587AC0069AF55 /* LoLWidgetTests */ = {
-			isa = PBXGroup;
-			children = (
-				69E650CD27A587AC0069AF55 /* LoLWidgetTests.swift */,
-				48BB031027A5BFD30067EB15 /* RiotServiceTests.swift */,
-			);
-			path = LoLWidgetTests;
-			sourceTree = "<group>";
-		};
-		69E650D627A587AC0069AF55 /* LoLWidgetUITests */ = {
-			isa = PBXGroup;
-			children = (
-				69E650D727A587AC0069AF55 /* LoLWidgetUITests.swift */,
-				69E650D927A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift */,
-			);
-			path = LoLWidgetUITests;
-			sourceTree = "<group>";
-		};
 		69E650EB27A588000069AF55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,14 +234,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69DD0FC727A6AABB00CCE764 /* LoLWidgetExtensionExtension */ = {
+		483F10AD27BC4E6C00AF4734 /* LoLWidgetExtensionExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69DD0FD427A6AABC00CCE764 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */;
+			buildConfigurationList = 483F10BD27BC4E6E00AF4734 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */;
 			buildPhases = (
-				4875CD0427A880110034FF3C /* SwiftFormat && SwiftLint */,
-				69DD0FC427A6AABB00CCE764 /* Sources */,
-				69DD0FC527A6AABB00CCE764 /* Frameworks */,
-				69DD0FC627A6AABB00CCE764 /* Resources */,
+				483F10AA27BC4E6C00AF4734 /* Sources */,
+				483F10AB27BC4E6C00AF4734 /* Frameworks */,
+				483F10AC27BC4E6C00AF4734 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -291,11 +248,11 @@
 			);
 			name = LoLWidgetExtensionExtension;
 			packageProductDependencies = (
-				4875CCFA27A872580034FF3C /* Alamofire */,
-				4875CCFC27A8725A0034FF3C /* Moya */,
+				4882BA7427BC57B000BD626E /* Alamofire */,
+				4882BA7627BC57B000BD626E /* Moya */,
 			);
 			productName = LoLWidgetExtensionExtension;
-			productReference = 69DD0FC827A6AABB00CCE764 /* LoLWidgetExtensionExtension.appex */;
+			productReference = 483F10AE27BC4E6C00AF4734 /* LoLWidgetExtensionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		69E650B827A587AA0069AF55 /* LoLWidget */ = {
@@ -311,7 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				69DD0FD227A6AABC00CCE764 /* PBXTargetDependency */,
+				483F10BB27BC4E6E00AF4734 /* PBXTargetDependency */,
 			);
 			name = LoLWidget;
 			packageProductDependencies = (
@@ -321,42 +278,6 @@
 			productName = LoLWidget;
 			productReference = 69E650B927A587AA0069AF55 /* LoLWidget.app */;
 			productType = "com.apple.product-type.application";
-		};
-		69E650C827A587AC0069AF55 /* LoLWidgetTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69E650E027A587AC0069AF55 /* Build configuration list for PBXNativeTarget "LoLWidgetTests" */;
-			buildPhases = (
-				69E650C527A587AC0069AF55 /* Sources */,
-				69E650C627A587AC0069AF55 /* Frameworks */,
-				69E650C727A587AC0069AF55 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69E650CB27A587AC0069AF55 /* PBXTargetDependency */,
-			);
-			name = LoLWidgetTests;
-			productName = LoLWidgetTests;
-			productReference = 69E650C927A587AC0069AF55 /* LoLWidgetTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		69E650D227A587AC0069AF55 /* LoLWidgetUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69E650E327A587AC0069AF55 /* Build configuration list for PBXNativeTarget "LoLWidgetUITests" */;
-			buildPhases = (
-				69E650CF27A587AC0069AF55 /* Sources */,
-				69E650D027A587AC0069AF55 /* Frameworks */,
-				69E650D127A587AC0069AF55 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69E650D527A587AC0069AF55 /* PBXTargetDependency */,
-			);
-			name = LoLWidgetUITests;
-			productName = LoLWidgetUITests;
-			productReference = 69E650D327A587AC0069AF55 /* LoLWidgetUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -368,19 +289,11 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					69DD0FC727A6AABB00CCE764 = {
+					483F10AD27BC4E6C00AF4734 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					69E650B827A587AA0069AF55 = {
 						CreatedOnToolsVersion = 13.2.1;
-					};
-					69E650C827A587AC0069AF55 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 69E650B827A587AA0069AF55;
-					};
-					69E650D227A587AC0069AF55 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 69E650B827A587AA0069AF55;
 					};
 				};
 			};
@@ -402,20 +315,19 @@
 			projectRoot = "";
 			targets = (
 				69E650B827A587AA0069AF55 /* LoLWidget */,
-				69E650C827A587AC0069AF55 /* LoLWidgetTests */,
-				69E650D227A587AC0069AF55 /* LoLWidgetUITests */,
-				69DD0FC727A6AABB00CCE764 /* LoLWidgetExtensionExtension */,
+				483F10AD27BC4E6C00AF4734 /* LoLWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		69DD0FC627A6AABB00CCE764 /* Resources */ = {
+		483F10AC27BC4E6C00AF4734 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4875CD0127A873BE0034FF3C /* Shared.xcassets in Resources */,
-				69DD0FCF27A6AABC00CCE764 /* Assets.xcassets in Resources */,
+				4882BA7327BC51E300BD626E /* Shared.xcassets in Resources */,
+				483F10B627BC4E6E00AF4734 /* Assets.xcassets in Resources */,
+				4894751327BC64090034C426 /* Shared.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,46 +336,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E650C427A587AC0069AF55 /* Preview Assets.xcassets in Resources */,
+				4894751227BC64090034C426 /* Shared.xcconfig in Resources */,
 				69E650C127A587AC0069AF55 /* Assets.xcassets in Resources */,
 				4875CD0027A873BE0034FF3C /* Shared.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69E650C727A587AC0069AF55 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69E650D127A587AC0069AF55 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4875CD0427A880110034FF3C /* SwiftFormat && SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftFormat && SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\n   swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 		4875CD0527A880340034FF3C /* SwiftFormat && SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,16 +366,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		69DD0FC427A6AABB00CCE764 /* Sources */ = {
+		483F10AA27BC4E6C00AF4734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4875CCF627A871130034FF3C /* LeagueEntryDTO.swift in Sources */,
-				4875CCF927A871130034FF3C /* SummonerDTO.swift in Sources */,
-				69DD0FCD27A6AABB00CCE764 /* LoLWidgetExtension.swift in Sources */,
-				4875CCF827A871130034FF3C /* RiotQuery.swift in Sources */,
-				4875CCFE27A872940034FF3C /* Constraints.swift in Sources */,
-				4875CCF727A871130034FF3C /* RiotService.swift in Sources */,
+				483F10C327BC4F0D00AF4734 /* Provider.swift in Sources */,
+				4882BA6D27BC51E300BD626E /* Constraints.swift in Sources */,
+				483F10B827BC4E6E00AF4734 /* LoLWidgetExtension.intentdefinition in Sources */,
+				4882BA6E27BC51E300BD626E /* RiotService.swift in Sources */,
+				4882BA7127BC51E300BD626E /* RiotQuery.swift in Sources */,
+				4882BA6227BC4FA900BD626E /* LoLWidgetExtensionEntryView.swift in Sources */,
+				4882BA6527BC4FDE00BD626E /* WidgetEntry.swift in Sources */,
+				4882BA7027BC51E300BD626E /* LeagueEntryDTO.swift in Sources */,
+				4882BA6F27BC51E300BD626E /* SummonerDTO.swift in Sources */,
+				4882BA7227BC51E300BD626E /* League.swift in Sources */,
+				483F10B327BC4E6C00AF4734 /* LoLWidgetExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +392,7 @@
 				4861852727ABF6C9006CAFB6 /* League.swift in Sources */,
 				48C8B88327A5A076009E906E /* LeagueEntryDTO.swift in Sources */,
 				4861852E27AC00E0006CAFB6 /* MainViewModel.swift in Sources */,
+				483F10B927BC4E6E00AF4734 /* LoLWidgetExtension.intentdefinition in Sources */,
 				4861852C27ABFCEA006CAFB6 /* LabelAndText.swift in Sources */,
 				48C8B88127A5A00F009E906E /* SummonerDTO.swift in Sources */,
 				48C8B88627A5A4BC009E906E /* Constraints.swift in Sources */,
@@ -516,46 +403,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69E650C527A587AC0069AF55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E650CE27A587AC0069AF55 /* LoLWidgetTests.swift in Sources */,
-				48BB031127A5BFD30067EB15 /* RiotServiceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69E650CF27A587AC0069AF55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E650DA27A587AC0069AF55 /* LoLWidgetUITestsLaunchTests.swift in Sources */,
-				69E650D827A587AC0069AF55 /* LoLWidgetUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		69DD0FD227A6AABC00CCE764 /* PBXTargetDependency */ = {
+		483F10BB27BC4E6E00AF4734 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 69DD0FC727A6AABB00CCE764 /* LoLWidgetExtensionExtension */;
-			targetProxy = 69DD0FD127A6AABC00CCE764 /* PBXContainerItemProxy */;
-		};
-		69E650CB27A587AC0069AF55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69E650B827A587AA0069AF55 /* LoLWidget */;
-			targetProxy = 69E650CA27A587AC0069AF55 /* PBXContainerItemProxy */;
-		};
-		69E650D527A587AC0069AF55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69E650B827A587AA0069AF55 /* LoLWidget */;
-			targetProxy = 69E650D427A587AC0069AF55 /* PBXContainerItemProxy */;
+			target = 483F10AD27BC4E6C00AF4734 /* LoLWidgetExtensionExtension */;
+			targetProxy = 483F10BA27BC4E6E00AF4734 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		69DD0FD527A6AABC00CCE764 /* Debug */ = {
+		483F10BE27BC4E6E00AF4734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,7 +441,7 @@
 			};
 			name = Debug;
 		};
-		69DD0FD627A6AABC00CCE764 /* Release */ = {
+		483F10BF27BC4E6E00AF4734 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,90 +648,14 @@
 			};
 			name = Release;
 		};
-		69E650E127A587AC0069AF55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X32W2D44;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidgetTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoLWidget.app/LoLWidget";
-			};
-			name = Debug;
-		};
-		69E650E227A587AC0069AF55 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X32W2D44;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidgetTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoLWidget.app/LoLWidget";
-			};
-			name = Release;
-		};
-		69E650E427A587AC0069AF55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X32W2D44;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidgetUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LoLWidget;
-			};
-			name = Debug;
-		};
-		69E650E527A587AC0069AF55 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X32W2D44;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jay.LoLWidgetUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LoLWidget;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69DD0FD427A6AABC00CCE764 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */ = {
+		483F10BD27BC4E6E00AF4734 /* Build configuration list for PBXNativeTarget "LoLWidgetExtensionExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69DD0FD527A6AABC00CCE764 /* Debug */,
-				69DD0FD627A6AABC00CCE764 /* Release */,
+				483F10BE27BC4E6E00AF4734 /* Debug */,
+				483F10BF27BC4E6E00AF4734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -891,24 +674,6 @@
 			buildConfigurations = (
 				69E650DE27A587AC0069AF55 /* Debug */,
 				69E650DF27A587AC0069AF55 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69E650E027A587AC0069AF55 /* Build configuration list for PBXNativeTarget "LoLWidgetTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69E650E127A587AC0069AF55 /* Debug */,
-				69E650E227A587AC0069AF55 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69E650E327A587AC0069AF55 /* Build configuration list for PBXNativeTarget "LoLWidgetUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69E650E427A587AC0069AF55 /* Debug */,
-				69E650E527A587AC0069AF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -935,12 +700,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4875CCFA27A872580034FF3C /* Alamofire */ = {
+		4882BA7427BC57B000BD626E /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 48C8B88827A5AE72009E906E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		4875CCFC27A8725A0034FF3C /* Moya */ = {
+		4882BA7627BC57B000BD626E /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 48BB030B27A5B0830067EB15 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;

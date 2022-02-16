@@ -42,15 +42,15 @@ struct MainView: View {
                         if let tier = league.tier {
                             LabelAndText(label: "랭크", innerBlock: { () -> Text in
                                 if let num = tier.rank {
-                                    return Text("\(tier.tier.rawValue) \(num)")
+                                    return Text("\(tier.tier.rawValue) \(num) \(league.points)점")
                                 } else {
-                                    return Text(tier.tier.rawValue)
+                                    return Text("\(tier.tier.rawValue) \(league.points)점")
                                 }
                             })
                         }
                         LabelAndText(
                             label: "승률",
-                            innerView: Text("\(league.wins)승 \(league.losses)패 \(league.winRate * 100)%")
+                            innerView: Text("\(league.wins)승 \(league.losses)패 \(String(format: "%.2f", league.winRate * 100))%")
                         )
                     }
                 }
